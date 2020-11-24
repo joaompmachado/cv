@@ -1,0 +1,445 @@
+body {
+  font-family: "Poppins";
+  text-align: center;
+  /* background-color: #f6f6f6; */
+  /* background-color: rgba(194, 131, 77, 0.1); */
+  background-color: #fff6eb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins";
+}
+
+h2 {
+  /* font-weight: 700; */
+  font-family: 'Poppins';
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 60px;
+  padding: 20px 0;
+  color: rgba(194, 131, 77, 1);
+}
+
+/* Headings */
+.big_heading {
+  font-family: 'Mali';
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+
+
+/* Containers */
+/* Title */
+#title {
+  padding-top: 3%;
+  margin: auto 10%;
+  /* padding: 3% 17% 20%; */
+  /* background-image: url(../images/title_horizontal.jpg);
+  background-repeat: no-repeat; */
+  /* background-color: rgb(109, 49, 145); */
+  /* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
+  color: #ffffff;
+  text-align: left;
+}
+
+.navbar {
+  padding: 1.5% 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-item:hover {
+  /* background-color: rgba(123, 58, 160, 1);
+  border-radius: 10%; */
+  border-bottom: 2px solid rgba(194, 131, 77, 1);
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#navbarSupportedContent ul li a {
+  color: #fff;
+}
+
+.title-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  z-index: -3;
+  /* transform: rotate(25deg); */
+  /*right: 50%;*/
+}
+
+.title_left {
+  /* margin-top: 5%; */
+  padding-top: 6%;
+}
+
+.title-image-small {
+  display: none;
+}
+
+.title-image-test {
+  position: absolute;
+}
+
+.title_desc {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px 0 0 0;
+}
+
+.title_desc2 {
+  margin-bottom: 50px;
+}
+
+.view_products_btn {
+  margin: 5% 3% 5% 0;
+  padding: 0.7% 1%;
+  border: 0px;
+  border-radius: 5px;
+  background-color: rgba(194, 131, 77, 1);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.view_products_btn:hover {
+  background-color: #a56c42;
+  text-decoration: none;
+  color: white;
+}
+
+.icon_button {
+  padding-right: 20px;
+}
+
+
+
+
+#products {
+  padding: 21% 0% 0%;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1.5%;
+  grid-row-gap: 20px;
+  grid-template-rows: repeat(24, 50px);
+  padding: 2% 20% 0% 20%;
+  margin: 0 5%;
+}
+
+.produtos_prod1_img {
+  grid-column: 1 / 7;
+  grid-row: 1 / 8;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.produtos_prod1_text {
+  background-color: #fff;
+  grid-column: 4 / 10;
+  grid-row: 5 / 8;
+  text-align: left;
+  padding: 5%;
+  z-index: 1;
+  justify-content: center;
+  border-radius: 5%;
+  border: 1px solid rgba(78,78,78,0.2);
+}
+
+.produtos_prod1_desc {
+  margin-bottom: 0;
+}
+
+.produtos_prod1_carrot {
+  display: hidden;
+  grid-column: 9 / 11;
+  grid-row: 2 / 5;
+  width: 100%;
+  height: auto;
+}
+
+.produtos_prod2_img {
+  grid-column: 7 / 13;
+  grid-row: 9 / 15;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.produtos_prod2_text {
+  background-color: #fff;
+  grid-column: 4 / 10;
+  grid-row: 13 / 16;
+  text-align: left;
+  padding: 5%;
+  z-index: 1;
+  justify-content: center;
+  border-radius: 5%;
+  border: 1px solid rgba(78,78,78,0.2);
+}
+
+.produtos_prod2_desc {
+  margin-bottom: 0;
+}
+
+.produtos_prod3_img {
+  grid-column: 1 / 7;
+  grid-row: 17 / 24;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.produtos_prod3_text {
+  background-color: #fff;
+  grid-column: 4 / 10;
+  grid-row: 22 / 25;
+  text-align: left;
+  padding: 5%;
+  z-index: 1;
+  justify-content: center;
+  border-radius: 5%;
+  border: 1px solid rgba(78,78,78,0.2);
+}
+
+.produtos_prod3_desc {
+  margin-bottom: 0;
+}
+
+.product_desc {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#products_desc_sec {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* Testimonial Section */
+#testimonials {
+  background-color: rgba(194, 131, 77, 0.4);
+  color: #000000;
+  width: 85%;
+  margin: auto auto 50px;
+  /* border-radius: 25px; */
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.testimonials_title {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.testimonial_item {
+  padding: 1% 17% 3%;
+}
+
+.testimonials_text {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  /* color: rgba(194, 131, 77, 1); */
+  color: white;
+  margin-bottom: 0;
+}
+
+.testimonial_img {
+  width: 30%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.testimonial_doggo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 25px;
+  color: rgb(70, 70, 70);
+}
+
+
+
+
+
+
+/* Orders */
+#orders {
+  padding: 1% 15% 3%;
+}
+
+.orders_title {
+  margin-bottom: 50px;
+}
+
+.order-column {
+  padding: 1% 1%;
+}
+
+.order_list {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.orders_img {
+  width: 60%;
+  border-radius: 2%;
+}
+
+.order_row2 {
+  margin-top: 80px;
+}
+
+.order_icon {
+  font-size: 40px;
+  color: rgba(194, 131, 77, 1);
+}
+
+.order_text {
+  font-size: 22px;
+}
+
+
+
+
+
+/* Contacts */
+#contacts {
+  padding: 1% 17% 3%;
+  margin-top: 5%;
+  /* background-color: #6e6e6e; */
+}
+
+.myself {
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.myself_img {
+  width: 60%;
+  border-radius: 2%;
+}
+
+.myself_text {
+}
+
+#contact_nome {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 25px;
+}
+
+#contact_email {
+  text-align: left;
+  padding-left: 20%;
+}
+
+#contact_ig {
+  text-align: left;
+  padding-left: 20%;
+}
+
+.contact_icon {
+  margin-right: 10px;
+}
+
+.contact_form {
+  text-align: left;
+}
+
+.contact_form_label {
+  margin: 0;
+  font-size: 17px;
+}
+
+
+
+
+
+/* Footer */
+#footer {
+  padding: 2% 15%;
+  background-color: rgb(168, 138, 102);
+}
+
+.p_footer {
+  color: #000;
+  font-family: 'Ubuntu';
+}
+
+.footer_icon {
+  margin: 20px 15px;
+}
+
+/* Media Query - Mobile Responsive */
+@media only screen and (max-width: 1028px) {
+  .body_container {
+    position: absolute;
+    width: 100%;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    display: none;
+  }
+
+  .title-image-small {
+    display: inline;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    z-index: -3;
+  }
+
+  .title_left {
+    padding-top: 0;
+  }
+
+  .navbar {
+    padding-bottom: 5%;
+  }
+
+  .download-button {
+    margin: 5% 0;
+  }
+
+  #products {
+    padding-top: 100%;
+  }
+}

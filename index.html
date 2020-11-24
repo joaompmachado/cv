@@ -1,104 +1,235 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>João's Personal Site</title>
+  <title>Barkery - Barks & Bakery</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cc1c71560c.js" crossorigin="anonymous"></script>
+
+  <!-- Keep personal stylesheet after bootstrap stylesheet in order to be able to override it -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- <img src="https://scontent.fopo3-2.fna.fbcdn.net/v/t1.0-9/83231489_2898922743472619_1073033236000538624_o.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=wvmUDk8NnGIAX_p8SQQ&_nc_ht=scontent.fopo3-2.fna&oh=a319654458b03b2d454d560458059127&oe=5FA21289" alt="João Profile Picture"> -->
+  <div class="body_container">
 
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/myimage.jpg"></td>
-      <td>
-        <h1>João Machado</h1>
-        <p><em>Software Developer at <strong><a href="https://www.linkedin.com/in/joaompmachado/">Iberiana Technical</a></strong></em></p>
-        <p>I am a Software Developer. I love music and photography.</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
+    <img class="title-image" src="images/title_horizontal.jpg" alt="image-barkery">
+    <img class="title-image-small" src="images/title_vertical.jpg" alt="image-barkery">
 
-  <h3>Education</h3>
-  <ul>
-    <li>Sciences and Technologies</li>
-    <li>Degree on Electronics Engineering</li>
-    <li>Major on Electronics Engineering</li>
-  </ul>
-  <hr>
+    <section id="title">
+      <div class="container-fluid">
 
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2015 - 2016</td>
-        <td>Professional Internship</td>
-      </tr>
-      <tr>
-        <td>2016</td>
-        <td>Software Engineer</td>
-      </tr>
-    </tbody>
-    <tfoot>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">barkery</a>
 
-    </tfoot>
-  </table>
-  <hr>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <h3>Skills</h3>
-  <table>
-    <tr>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>VB.net</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-            <tr>
-              <td>HTML</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-              <tr>
-                <td>CSS</td>
-                <td>⭐⭐⭐</td>
-              </tr>
-        </table>
-      </td>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>C#</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-            <tr>
-              <td>C</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-              <tr>
-                <td>SQL</td>
-                <td>⭐⭐⭐⭐</td>
-              </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#products_ref">Biscoitos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#orders">Encomendas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="title_left">
+          <h1 class="big_heading">Ergue o nariz<br> do teu patudo!</h1>
+          <p class="title_desc">Biscoitos feitos à mão com muito amor!</p>
+          <p class="title_desc2">Sem corantes nem conservantes.</p>
+          <a href="#products_ref" class="view_products_btn"><i class="fas fa-eye icon_button"></i>Ver Biscoitos</a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Products -->
+    <h2 id="products">Biscoitos</h2>
+
+    <div class="produtos" id="products_ref">
+      <img class="produtos_prod1_img" src="images/product1.jpg" alt="Card image cap"><img class="produtos_prod1_img" src="images/product1.jpg" alt="Card image cap">
+      <!-- <img class="produtos_prod1_carrot" src="images/carrot.png" alt="Alt-carro"> -->
+      <div class="produtos_prod1_text">
+        <h3>Cenoura e Coco</h5>
+        <p class="produtos_prod1_desc">ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus</p>
+      </div>
+      <img class="produtos_prod2_img" src="images/product2.jpeg" alt="Card image cap">
+      <div class="produtos_prod2_text">
+        <h3>Cenoura e Açafrão</h5>
+          <p class="produtos_prod2_desc">ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus</p>
+      </div>
+      <img class="produtos_prod3_img" src="images/product3.jpeg" alt="Card image cap">
+      <div class="produtos_prod3_text">
+        <h3>Cenoura e Alfarroba</h5>
+          <p class="produtos_prod3_desc">ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus</p>
+      </div>
+    </div>
+
+    <section id="products_desc_sec">
+      <p class="product_desc">Validade de 1 mês.</p>
+      <p class="product_desc">Conservar em tupperware ou recipiente metálico.</p>
+      <p class="product_desc">Tamanhos variados consoante a preferência.</p>
+    </section>
 
 
 
 
 
-  <hr>
-  <br>
-  <a href="hobbies.html">My Hobbies</a><br>
-  <a href="contacts.html">Contacts</a>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2 class="testimonials_title">Feedbarks</h2>
+
+      <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active testimonial_item">
+            <h2 class="testimonials_text">"sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare"</h2>
+            <img class="testimonial_img" src="images/feedback1.jpeg" alt="dog-profile">
+            <em class="testimonial_doggo">Bark Doggo</em>
+          </div>
+          <div class="carousel-item testimonial_item">
+            <h2 class="testimonials_text">"sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare"</h2>
+            <img class="testimonial_img" src="images/feedback2.jpeg" alt="lady-profile">
+            <em class="testimonial_doggo">Bork Doggo</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+    </section>
+
+
+
+    <!-- Orders -->
+    <section id="orders">
+
+      <h2 class="orders_title">Encomendas</h2>
+
+      <div class="row">
+        <div class="order-column col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <p><i class="fas fa-tags order_icon"></i></p>
+              <p class="order_text">Embalagem ~200gr<br>4€</p>
+            </div>
+            <div class="col-lg-6">
+              <p><i class="fas fa-money-check-alt order_icon"></i></p>
+              <p class="order_text">MBWay<br>Transferência</p>
+            </div>
+          </div>
+
+          <div class="row order_row2">
+            <div class="col-lg-6">
+              <p><i class="fas fa-truck order_icon"></i></p>
+              <p class="order_text">Correio Normal (+2€)<br>Correio Registado (+5.5€)</p>
+            </div>
+            <div class="col-lg-6">
+              <p><i class="fas fa-people-carry order_icon"></i></p>
+              <p class="order_text">Rio Tinto<br>Valongo<br>Arca d'Água</p>
+            </div>
+          </div>
+
+
+          <!-- <ul>
+          <li class="order_list">Pagamento por transferência ou MBWay</li>
+          <li class="order_list">Entregas em mão na zona do Rio Tinto, Valongo e Arca d'Água</li>
+          <li class="order_list">Envios por correio normal (+2€) ou por correio registado (+5,5€)</li>
+          <li class="order_list">Preço de 4€ p/embalagem de ~200gr</li>
+        </ul> -->
+        </div>
+
+        <div class="order-column col-lg-6">
+          <img class="orders_img" src="images/orders.jpeg" alt="Card image cap">
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Contacts -->
+    <section id="contacts">
+
+      <h2>Contacta-me</h2>
+
+      <div class="row">
+        <div class="order-column col-lg-6 myself">
+          <img class="myself_img" src="images/carol.jpeg" alt="Card image cap">
+          <div>
+            <p id="contact_nome">Carolina Roseira Rodrigues</p>
+            <p id="contact_email"><i class="far fa-envelope contact_icon"></i>barkery_asdasdasd@gmail.com</p>
+            <p id="contact_ig"><i class="fab fa-instagram contact_icon"></i>madeby.barkery</p>
+          </div>
+        </div>
+
+        <div class="order-column col-lg-6">
+          <form class="contact_form" action="mailto:joao_mpm@hotmail.com" method="post" enctype="text/plain">
+            <div class="">
+              <label class="contact_form_label">Nome:</label><br>
+              <input type="text" name="Name" value=""><br>
+            </div>
+            <div class="">
+              <label class="contact_form_label">Telemóvel:</label><br>
+              <input type="text" name="Mobile" value=""><br>
+            </div>
+            <div class="">
+              <label class="contact_form_label">Email:</label><br>
+              <input type="email" name="Email" value=""><br>
+            </div>
+            <div class="">
+              <label class="contact_form_label">Mensagem:</label><br>
+              <textarea name="Mensagem" rows="11" cols="60">(Tipo de biscoito, quantidade, tamanhos, modo de pagamento e método de entrega)</textarea>
+            </div>
+
+            <input type="submit" name="">
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+
+      <i class="fab fa-instagram footer_icon"></i>
+      <i class="far fa-envelope footer_icon"></i>
+      <p class="p_footer">© 2020 Barkery - Barks & Bakery</p>
+
+    </footer>
+
+
+  </div>
 </body>
 
 </html>
