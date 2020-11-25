@@ -28,9 +28,6 @@ h2 {
   line-height: 1.2;
 }
 
-
-
-
 /* Containers */
 /* Title */
 #title {
@@ -63,6 +60,10 @@ h2 {
   /* background-color: rgba(123, 58, 160, 1);
   border-radius: 10%; */
   border-bottom: 2px solid rgba(194, 131, 77, 1);
+}
+
+.navbar_dropdown {
+  text-align: right;
 }
 
 .nav-link {
@@ -128,9 +129,6 @@ h2 {
   padding-right: 20px;
 }
 
-
-
-
 #products {
   padding: 21% 0% 0%;
   margin: 0 5%;
@@ -164,7 +162,7 @@ h2 {
   z-index: 1;
   justify-content: center;
   border-radius: 5%;
-  border: 1px solid rgba(78,78,78,0.2);
+  border: 1px solid rgba(78, 78, 78, 0.2);
 }
 
 .produtos_prod1_desc {
@@ -196,7 +194,7 @@ h2 {
   z-index: 1;
   justify-content: center;
   border-radius: 5%;
-  border: 1px solid rgba(78,78,78,0.2);
+  border: 1px solid rgba(78, 78, 78, 0.2);
 }
 
 .produtos_prod2_desc {
@@ -220,7 +218,7 @@ h2 {
   z-index: 1;
   justify-content: center;
   border-radius: 5%;
-  border: 1px solid rgba(78,78,78,0.2);
+  border: 1px solid rgba(78, 78, 78, 0.2);
 }
 
 .produtos_prod3_desc {
@@ -237,13 +235,6 @@ h2 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-
-
-
-
-
-
-
 
 /* Testimonial Section */
 #testimonials {
@@ -289,11 +280,6 @@ h2 {
   color: rgb(70, 70, 70);
 }
 
-
-
-
-
-
 /* Orders */
 #orders {
   padding: 1% 15% 3%;
@@ -330,10 +316,6 @@ h2 {
   font-size: 22px;
 }
 
-
-
-
-
 /* Contacts */
 #contacts {
   padding: 1% 17% 3%;
@@ -351,8 +333,7 @@ h2 {
   border-radius: 2%;
 }
 
-.myself_text {
-}
+.myself_text {}
 
 #contact_nome {
   margin-top: 20px;
@@ -384,10 +365,6 @@ h2 {
   font-size: 17px;
 }
 
-
-
-
-
 /* Footer */
 #footer {
   padding: 2% 15%;
@@ -403,8 +380,16 @@ h2 {
   margin: 20px 15px;
 }
 
+
+
+
+
+
+
+
+
 /* Media Query - Mobile Responsive */
-@media only screen and (max-width: 1028px) {
+@media only screen and (max-width: 1200px) {
   .body_container {
     position: absolute;
     width: 100%;
@@ -412,6 +397,24 @@ h2 {
 
   #title {
     text-align: center;
+    margin: auto 5%;
+  }
+
+  .title_left {
+    padding-top: 0;
+  }
+
+  .big_heading {
+    font-size: 80px;
+  }
+
+  .title_desc {
+    font-size: 40px;
+  }
+
+  .title_desc2 {
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
   .title-image {
@@ -427,19 +430,115 @@ h2 {
     z-index: -3;
   }
 
-  .title_left {
-    padding-top: 0;
-  }
-
   .navbar {
-    padding-bottom: 5%;
+    padding-bottom: 1.5%;
+    margin: auto 3%;
   }
 
-  .download-button {
-    margin: 5% 0;
+  .view_products_btn {
+    margin: 5% 3% 5% 0;
+    padding: 1.2% 2%;
+    font-size: 30px;
   }
 
   #products {
     padding-top: 100%;
+  }
+
+  .produtos {
+    padding: 5% 7% 0 7%;
+  }
+
+  .produtos_prod1_text {
+    grid-column: 4 / 11;
+    padding: 3% 6% 1%;
+  }
+
+  .produtos_prod1_desc {
+    font-size: 20px;
+  }
+
+  .produtos_prod2_text {
+    grid-column: 3 / 10;
+    padding: 3% 6% 1%;
+  }
+
+  .produtos_prod2_desc {
+    font-size: 20px;
+  }
+
+  .produtos_prod3_text {
+    grid-column: 4 / 11;
+    padding: 3% 6% 1%;
+  }
+
+  .produtos_prod3_desc {
+    font-size: 20px;
+  }
+
+  #products_desc_sec {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  #orders {
+    padding: 1% 10% 3%;
+  }
+
+  .orders_title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .order_row1 {
+    justify-content: center;
+  }
+
+  .order_row2 {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .order_item {
+    width: 40%;
+  }
+
+  #contacts {
+    margin-top: 70px;
+  }
+
+  .myself_img {
+    width: 70%;
+  }
+
+  #contact_nome {
+    font-size: 39px;
+  }
+
+  #contact_email {
+    padding-left: 15%;
+    font-size: 25px;
+  }
+
+  #contact_ig {
+    padding-left: 15%;
+    font-size: 25px;
+  }
+
+  .contact_icon {
+    margin-right: 10px;
+  }
+
+  .contact_form {
+    padding-left: 100px;
+    font-size: 20px;
+  }
+
+  .contact_form_label {
+    font-size: 20px;
+  }
+
+  #footer {
+    padding: 1% 15%;
   }
 }
